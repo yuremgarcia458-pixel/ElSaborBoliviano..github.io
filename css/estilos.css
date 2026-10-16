@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#000000,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+   url("../jpg/plato paceño 2.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+
+header h1{
+    font-size:65px;
+    color:#FFD54F;
+    text-shadow:3px 3px 10px black;
+}
+
+header p{
+    font-size:22px;
+    margin-top:20px;
+    max-width:800px;
+}
+
+.btn{
+    margin-top:35px;
+    padding:15px 35px;
+    background:#FFD54F;
+    color:#222;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    background:white;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.titulo{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#FFD54F;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h2{
+    color:#FFD54F;
+    margin-bottom:10px;
+}
+
+.card h3{
+    margin-top:15px;
+    color:#7CFC90;
+}
+
+.card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+footer{
+    background:#111;
+    padding:30px;
+    text-align:center;
+    color:#bbb;
+}
+
+.bandera{
+    display:flex;
+    height:10px;
+}
+
+.verde{
+    background:#007A33;
+    flex:1;
+}
+
+.amarillo{
+    background:#FCD116;
+    flex:1;
+}
+
+.rojo{
+    background:#D52B1E;
+    flex:1;
+}
+.detalle{
+
+display:none;
+
+min-height:100vh;
+
+padding:50px;
+
+background:
+linear-gradient(135deg,#1b1b1b,#4b0000);
+
+animation:entrada 1s;
+
+}
+
+
+.detalle h1{
+
+font-size:50px;
+
+color:#FFD54F;
+
+text-align:center;
+
+}
+
+
+.detalle img{
+
+width:80%;
+
+max-width:700px;
+
+display:block;
+
+margin:auto;
+
+border-radius:20px;
+
+}
+
+
+.detalle video{
+
+width:80%;
+
+max-width:1000px;
+
+display:block;
+
+margin:30px auto;
+
+border-radius:20px;
+
+}
+
+
+.detalle h2{
+
+color:#FFD54F;
+
+margin-top:40px;
+
+}
+
+
+.detalle p{
+
+font-size:20px;
+
+line-height:1.8;
+
+}
+
+
+.ingredientes{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:20px;
+
+}
+
+
+.ingredientes div{
+
+background:white;
+
+color:#222;
+
+padding:20px;
+
+border-radius:15px;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+
+.detalle button{
+
+background:#FFD54F;
+
+border:none;
+
+padding:15px 30px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+.fotos{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.fotos .foto{
+    width:40%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+
+@keyframes entrada{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+.compartir{
+    text-align:center;
+    padding:70px 20px;
+    margin-top:50px;
+}
+
+.compartir h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.compartir p{
+    color:#ddd;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.botones-compartir{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.botones-compartir button{
+    border:none;
+    padding:14px 25px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.botones-compartir button:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.facebook{
+    background:#1877F2;
+    color:white;
+}
+
+.copiar{
+    background:#FFD54F;
+    color:#222;
+}
+
+#mensaje-copiado{
+    margin-top:20px;
+    font-size:16px;
+}
+.redes-sociales{
+    text-align:center;
+    padding:60px 20px;
+    margin-top:20px;
+}
+
+.redes-sociales h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.redes-sociales p{
+    color:#ddd;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.red{
+    text-decoration:none;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.red:hover{
+    transform:translateY(-6px) scale(1.05);
+}
+
+.tiktok{
+    background:#111;
+    border:2px solid white;
+}
+
+.youtube{
+    background:#FF0000;
+}
+
+.instagram{
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+
+
+.lista-ingredientes {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px 0 30px 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.ingrediente {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+
+    min-height: 150px;
+    padding: 20px 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    text-align: left;
+}
+
+
+.ingrediente img {
+    width: 150px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+}
+
+
+.ingrediente-info {
+    flex: 1;
+}
+
+.ingrediente-info h3 {
+    margin: 0 0 12px;
+    color: #FFD54F;
+    font-size: 24px;
+}
+
+.ingrediente-info p {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 500px) {
+    .lista-ingredientes {
+        width: 94%;
+    }
+
+    .ingrediente {
+        gap: 14px;
+        padding: 12px;
+        min-height: 110px;
+    }
+
+    .ingrediente img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ingrediente-info h3 {
+        font-size: 18px;
+    }
+
+    .ingrediente-info p {
+        font-size: 14px;
+    }
+}
+.contenedor-video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
